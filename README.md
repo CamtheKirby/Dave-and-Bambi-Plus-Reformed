@@ -12,7 +12,8 @@ And others! (Prob in the credits menu)
 # VS DAVE AND BAMBI PLUS REFORMED
 this is dan
 
-<img src="https://cdn.discordapp.com/attachments/892140166309892136/905267141299802152/dorve_reale.png" width="211" height="373">
+![image](https://github.com/CamtheKirby/Dave-and-Bambi-Plus-Reformed/assets/92703353/0a2aa507-4bcf-4ce6-b0d7-133ebefcbd1d)
+
 
 say hi to dan
 please say hi to him
