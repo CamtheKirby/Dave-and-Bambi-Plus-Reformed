@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Insanitydavev2342134.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="353" height="551"/>
+	<SubTexture name="down0001" x="357" y="0" width="353" height="551"/>
+	<SubTexture name="down0002" x="714" y="0" width="353" height="551"/>
+	<SubTexture name="down0003" x="1071" y="0" width="353" height="551"/>
+	<SubTexture name="idle0000" x="1428" y="0" width="326" height="585"/>
+	<SubTexture name="idle0001" x="1758" y="0" width="326" height="585"/>
+	<SubTexture name="idle0002" x="2088" y="0" width="326" height="585"/>
+	<SubTexture name="idle0003" x="2418" y="0" width="326" height="585"/>
+	<SubTexture name="idle0004" x="2418" y="0" width="326" height="585"/>
+	<SubTexture name="idle0005" x="2748" y="0" width="326" height="585"/>
+	<SubTexture name="idle0006" x="2748" y="0" width="326" height="585"/>
+	<SubTexture name="left0000" x="3078" y="0" width="389" height="573"/>
+	<SubTexture name="left0001" x="3471" y="0" width="389" height="573"/>
+	<SubTexture name="left0002" x="0" y="589" width="389" height="573"/>
+	<SubTexture name="left0003" x="393" y="589" width="389" height="573"/>
+	<SubTexture name="right0000" x="786" y="589" width="431" height="570"/>
+	<SubTexture name="right0001" x="1221" y="589" width="431" height="570"/>
+	<SubTexture name="right0002" x="1656" y="589" width="431" height="570"/>
+	<SubTexture name="right0003" x="2091" y="589" width="431" height="570"/>
+	<SubTexture name="scared0000" x="2526" y="589" width="342" height="582"/>
+	<SubTexture name="scared0001" x="2872" y="589" width="342" height="582"/>
+	<SubTexture name="scared0002" x="3218" y="589" width="342" height="582"/>
+	<SubTexture name="up0000" x="3564" y="589" width="324" height="604"/>
+	<SubTexture name="up0001" x="0" y="1197" width="324" height="604"/>
+	<SubTexture name="up0002" x="328" y="1197" width="324" height="604"/>
+	<SubTexture name="up0003" x="656" y="1197" width="324" height="604"/>
+</TextureAtlas>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flandre.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="flandre_idle0000" x="1213" y="540" width="388" height="573" frameX="-66" frameY="-122" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0001" x="809" y="552" width="381" height="571" frameX="-58" frameY="-124" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0002" x="1625" y="528" width="385" height="573" frameX="-60" frameY="-122" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0003" x="0" y="550" width="392" height="573" frameX="-63" frameY="-122" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0004" x="0" y="1123" width="381" height="573" frameX="-66" frameY="-122" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0005" x="381" y="1123" width="377" height="561" frameX="-55" frameY="-132" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_idle0006" x="419" y="0" width="390" height="573" frameX="-61" frameY="-122" frameWidth="500" frameHeight="700"/>
+	<SubTexture name="flandre_down0000" x="2045" y="1143" width="343" height="501" frameX="-197" frameY="-197" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_down0001" x="419" y="573" width="354" height="473" frameX="-191" frameY="-225" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_left0000" x="0" y="0" width="419" height="550" frameX="-92" frameY="-140" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_left0001" x="809" y="0" width="404" height="552" frameX="-82" frameY="-137" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_right0000" x="1625" y="0" width="420" height="528" frameX="-126" frameY="-154" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_right0001" x="1213" y="0" width="412" height="540" frameX="-125" frameY="-141" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_up0000" x="2045" y="564" width="363" height="579" frameX="-159" frameY="-109" frameWidth="700" frameHeight="700"/>
+	<SubTexture name="flandre_up0001" x="2045" y="0" width="373" height="564" frameX="-137" frameY="-125" frameWidth="700" frameHeight="700"/>
+</TextureAtlas>

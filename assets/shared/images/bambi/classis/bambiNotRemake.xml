@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bambiRemake.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="332" height="294"/>
+	<SubTexture name="down0001" x="332" y="0" width="332" height="294"/>
+	<SubTexture name="down0002" x="664" y="0" width="332" height="294"/>
+	<SubTexture name="idle0000" x="996" y="0" width="351" height="316"/>
+	<SubTexture name="idle0001" x="1347" y="0" width="351" height="316"/>
+	<SubTexture name="idle0002" x="0" y="316" width="351" height="316"/>
+	<SubTexture name="idle0003" x="351" y="316" width="351" height="316"/>
+	<SubTexture name="left0000" x="702" y="316" width="377" height="314"/>
+	<SubTexture name="left0001" x="1079" y="316" width="377" height="314"/>
+	<SubTexture name="left0002" x="1456" y="316" width="377" height="314"/>
+	<SubTexture name="right0000" x="0" y="632" width="315" height="347"/>
+	<SubTexture name="right0001" x="315" y="632" width="315" height="347"/>
+	<SubTexture name="up0000" x="630" y="632" width="339" height="373"/>
+	<SubTexture name="up0001" x="969" y="632" width="339" height="373"/>
+	<SubTexture name="up0002" x="1308" y="632" width="339" height="373"/>
+</TextureAtlas>

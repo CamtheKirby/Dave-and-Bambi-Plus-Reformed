@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Splitathon_Dave.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="347" height="455"/>
+	<SubTexture name="down0001" x="351" y="0" width="347" height="455"/>
+	<SubTexture name="down0002" x="702" y="0" width="347" height="455"/>
+	<SubTexture name="idle0000" x="1053" y="0" width="323" height="457"/>
+	<SubTexture name="idle0001" x="1380" y="0" width="323" height="457"/>
+	<SubTexture name="idle0002" x="1707" y="0" width="323" height="457"/>
+	<SubTexture name="idle0003" x="0" y="461" width="323" height="457"/>
+	<SubTexture name="left0000" x="327" y="461" width="310" height="457"/>
+	<SubTexture name="left0001" x="641" y="461" width="310" height="457"/>
+	<SubTexture name="left0002" x="955" y="461" width="310" height="457"/>
+	<SubTexture name="right0000" x="1269" y="461" width="300" height="459"/>
+	<SubTexture name="right0001" x="1573" y="461" width="300" height="459"/>
+	<SubTexture name="right0002" x="0" y="924" width="300" height="459"/>
+	<SubTexture name="up0000" x="304" y="924" width="314" height="457"/>
+	<SubTexture name="up0001" x="622" y="924" width="314" height="457"/>
+	<SubTexture name="up0002" x="940" y="924" width="314" height="457"/>
+</TextureAtlas>

@@ -1,0 +1,9 @@
+idle 0 0
+singDOWN 22 -27
+singRIGHT 65 3
+singSmash 38 82
+singUP -79 43
+singLEFT -76 -6
+throw 688 26
+scream -29 33
+hey -29 33

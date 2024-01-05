@@ -1,0 +1,7 @@
+idle 0 0
+singRIGHT 4 -6
+singDOWN -1 -13
+singLEFT -5 2
+singUP -4 12
+sleeping 315 0
+sleepIdle 315 -6

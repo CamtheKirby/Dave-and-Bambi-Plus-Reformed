@@ -1,0 +1,16 @@
+scared 6, 3
+singRIGHTmiss -58, -6
+singDOWN -40, -30
+singLEFTmiss -4, -2
+singUP -59, 57
+hey -2, 1
+idle 0 0
+singDOWNmiss -40, -30
+singRIGHT -58, -6
+singLEFT -4, -2
+singUPmiss -59, 57
+firstDeath 17, 1
+deathLoop 17, 5
+deathConfirm 12, 36
+scared 6, 3
+hit 13, 25

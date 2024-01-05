@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DaveSplitathon.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="happy0000" x="0" y="0" width="421" height="586"/>
+	<SubTexture name="happy0001" x="0" y="0" width="421" height="586"/>
+	<SubTexture name="happy0002" x="425" y="0" width="421" height="586"/>
+	<SubTexture name="happy0003" x="425" y="0" width="421" height="586"/>
+	<SubTexture name="happy0004" x="850" y="0" width="421" height="586"/>
+	<SubTexture name="happy0005" x="1275" y="0" width="421" height="586"/>
+	<SubTexture name="happy0006" x="1700" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0000" x="2125" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0001" x="2550" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0002" x="2975" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0003" x="3400" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0004" x="3400" y="0" width="421" height="586"/>
+	<SubTexture name="bruh0005" x="0" y="590" width="421" height="586"/>
+	<SubTexture name="bruh0006" x="0" y="590" width="421" height="586"/>
+	<SubTexture name="waiting0000" x="425" y="590" width="403" height="596"/>
+	<SubTexture name="waiting0001" x="832" y="590" width="403" height="596"/>
+	<SubTexture name="waiting0002" x="1239" y="590" width="403" height="596"/>
+	<SubTexture name="down0000" x="1646" y="590" width="441" height="565"/>
+	<SubTexture name="down0001" x="2091" y="590" width="441" height="565"/>
+	<SubTexture name="down0002" x="2536" y="590" width="441" height="565"/>
+	<SubTexture name="down0003" x="2981" y="590" width="441" height="565"/>
+	<SubTexture name="idle0000" x="3426" y="590" width="421" height="586"/>
+	<SubTexture name="idle0001" x="0" y="1190" width="421" height="586"/>
+	<SubTexture name="idle0002" x="425" y="1190" width="421" height="586"/>
+	<SubTexture name="idle0003" x="850" y="1190" width="421" height="586"/>
+	<SubTexture name="idle0004" x="850" y="1190" width="421" height="586"/>
+	<SubTexture name="idle0005" x="1275" y="1190" width="421" height="586"/>
+	<SubTexture name="idle0006" x="1275" y="1190" width="421" height="586"/>
+	<SubTexture name="left0000" x="1700" y="1190" width="433" height="594"/>
+	<SubTexture name="left0001" x="2137" y="1190" width="433" height="594"/>
+	<SubTexture name="left0002" x="2574" y="1190" width="433" height="594"/>
+	<SubTexture name="left0003" x="3011" y="1190" width="433" height="594"/>
+	<SubTexture name="right0000" x="3448" y="1190" width="431" height="572"/>
+	<SubTexture name="right0001" x="0" y="1788" width="431" height="572"/>
+	<SubTexture name="right0002" x="435" y="1788" width="431" height="572"/>
+	<SubTexture name="right0003" x="870" y="1788" width="431" height="572"/>
+	<SubTexture name="up0000" x="1305" y="1788" width="427" height="606"/>
+	<SubTexture name="up0001" x="1736" y="1788" width="427" height="606"/>
+	<SubTexture name="up0002" x="2167" y="1788" width="427" height="606"/>
+	<SubTexture name="up0003" x="2598" y="1788" width="427" height="606"/>
+</TextureAtlas>

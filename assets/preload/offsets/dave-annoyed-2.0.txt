@@ -1,0 +1,6 @@
+idle 0 0
+singDOWN 0, -34
+singRIGHT 16, -18
+singUP 3, 18
+singLEFT 85, -12
+scared 0, -2

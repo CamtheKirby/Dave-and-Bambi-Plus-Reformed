@@ -1,0 +1,7 @@
+idle 0 0
+singUP -20 42
+singRIGHT 100 3
+singLEFT -59 -7
+singDOWN 3 -25
+yummyCornLol -15 5
+umWhatIsHappening -32 1

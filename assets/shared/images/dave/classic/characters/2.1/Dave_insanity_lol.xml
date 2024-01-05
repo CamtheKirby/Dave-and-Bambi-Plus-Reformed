@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DaveInsanity21.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="300" y="947" width="264" height="434" pivotX="439.1" pivotY="346.6" frameX="-10" frameY="-22" frameWidth="274" frameHeight="456"/>
+	<SubTexture name="idle0001" x="574" y="10" width="244" height="446" frameX="0" frameY="-10" frameWidth="274" frameHeight="456"/>
+	<SubTexture name="idle0002" x="306" y="478" width="244" height="456" frameX="0" frameY="0" frameWidth="274" frameHeight="456"/>
+	<SubTexture name="idle0003" x="320" y="10" width="244" height="456" frameX="0" frameY="0" frameWidth="274" frameHeight="456"/>
+	<SubTexture name="down0000" x="560" y="476" width="254" height="430" pivotX="33.5" pivotY="203.8" frameX="0" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0001" x="560" y="476" width="254" height="430" frameX="0" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0002" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0003" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0004" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0005" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0006" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0007" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0008" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="down0009" x="574" y="916" width="252" height="430" frameX="-4" frameY="0" frameWidth="256" frameHeight="430"/>
+	<SubTexture name="left0000" x="279" y="1422" width="250" height="459" pivotX="193.25" pivotY="248.8" frameX="-23" frameY="-6" frameWidth="280" frameHeight="465"/>
+	<SubTexture name="left0001" x="279" y="1422" width="250" height="459" frameX="-23" frameY="-6" frameWidth="280" frameHeight="465"/>
+	<SubTexture name="left0002" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0003" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0004" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0005" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0006" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0007" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0008" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="left0009" x="10" y="947" width="280" height="465"/>
+	<SubTexture name="right0000" x="10" y="478" width="286" height="459" pivotX="4" pivotY="139.05" frameX="0" frameY="0" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0001" x="10" y="478" width="286" height="459" frameX="0" frameY="0" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0002" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0003" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0004" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0005" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0006" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0007" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0008" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="right0009" x="10" y="10" width="300" height="458" frameX="-1" frameY="-1" frameWidth="301" frameHeight="459"/>
+	<SubTexture name="up0000" x="539" y="1391" width="244" height="464" pivotX="-43.95" pivotY="212.5" frameX="-31" frameY="-1" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0001" x="539" y="1391" width="244" height="464" frameX="-31" frameY="-1" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0002" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0003" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0004" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0005" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0006" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0007" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0008" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+	<SubTexture name="up0009" x="10" y="1422" width="259" height="465" frameX="0" frameY="0" frameWidth="275" frameHeight="465"/>
+</TextureAtlas>

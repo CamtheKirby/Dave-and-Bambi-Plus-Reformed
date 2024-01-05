@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="doge sprites.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Doge note down0000" x="0" y="0" width="443" height="251" frameX="-4" frameY="-39" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0001" x="0" y="0" width="443" height="251" frameX="-4" frameY="-39" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0002" x="443" y="0" width="422" height="257" frameX="-5" frameY="-33" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0003" x="443" y="0" width="422" height="257" frameX="-5" frameY="-33" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0004" x="865" y="0" width="390" height="285" frameX="0" frameY="-5" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0005" x="865" y="0" width="390" height="285" frameX="0" frameY="-5" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0006" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0007" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0008" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0009" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0010" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0011" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0012" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note down0013" x="1255" y="0" width="382" height="290" frameX="-6" frameY="0" frameWidth="447" frameHeight="290"/>
+	<SubTexture name="Doge note left0000" x="1637" y="0" width="349" height="384" frameX="0" frameY="0" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0001" x="1637" y="0" width="349" height="384" frameX="0" frameY="0" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0002" x="0" y="384" width="347" height="369" frameX="-26" frameY="-12" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0003" x="0" y="384" width="347" height="369" frameX="-26" frameY="-12" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0004" x="347" y="384" width="339" height="345" frameX="-53" frameY="-50" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0005" x="347" y="384" width="339" height="345" frameX="-53" frameY="-50" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0006" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0007" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0008" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0009" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0010" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0011" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0012" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note left0013" x="686" y="384" width="339" height="339" frameX="-58" frameY="-58" frameWidth="397" frameHeight="397"/>
+	<SubTexture name="Doge note right0000" x="1025" y="384" width="438" height="401" frameX="-23" frameY="0" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0001" x="1025" y="384" width="438" height="401" frameX="-23" frameY="0" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0002" x="1463" y="384" width="415" height="386" frameX="-15" frameY="-12" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0003" x="1463" y="384" width="415" height="386" frameX="-15" frameY="-12" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0004" x="0" y="785" width="366" height="353" frameX="-4" frameY="-44" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0005" x="0" y="785" width="366" height="353" frameX="-4" frameY="-44" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0006" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0007" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0008" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0009" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0010" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0011" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0012" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note right0013" x="366" y="785" width="358" height="347" frameX="0" frameY="-50" frameWidth="461" frameHeight="401"/>
+	<SubTexture name="Doge note up0000" x="724" y="785" width="349" height="376" frameX="-4" frameY="0" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0001" x="724" y="785" width="349" height="376" frameX="-4" frameY="0" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0002" x="1073" y="785" width="351" height="375" frameX="-3" frameY="-14" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0003" x="1073" y="785" width="351" height="375" frameX="-3" frameY="-14" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0004" x="1424" y="785" width="357" height="360" frameX="0" frameY="-53" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0005" x="1424" y="785" width="357" height="360" frameX="0" frameY="-53" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0006" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0007" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0008" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0009" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0010" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0011" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0012" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge note up0013" x="0" y="1161" width="355" height="354" frameX="-1" frameY="-65" frameWidth="357" frameHeight="419"/>
+	<SubTexture name="Doge0000" x="355" y="1161" width="367" height="320" frameX="0" frameY="-18" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0001" x="355" y="1161" width="367" height="320" frameX="0" frameY="-18" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0002" x="722" y="1161" width="356" height="324" frameX="-3" frameY="-14" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0003" x="722" y="1161" width="356" height="324" frameX="-3" frameY="-14" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0004" x="1078" y="1161" width="346" height="335" frameX="-9" frameY="-4" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0005" x="1078" y="1161" width="346" height="335" frameX="-9" frameY="-4" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0006" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0007" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0008" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0009" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0010" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0011" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0012" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+	<SubTexture name="Doge0013" x="1424" y="1161" width="339" height="339" frameX="-16" frameY="0" frameWidth="367" frameHeight="339"/>
+</TextureAtlas>

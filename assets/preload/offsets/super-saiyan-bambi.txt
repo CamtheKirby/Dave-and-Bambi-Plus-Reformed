@@ -1,0 +1,6 @@
+singDOWN 22 -28
+singUP 55 36
+idle 0 0
+singRIGHT -16 8
+singSmash 98 81
+singLEFT 70 6

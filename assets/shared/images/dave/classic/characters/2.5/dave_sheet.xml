@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DaveRemastered.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="349" height="585"/>
+	<SubTexture name="down0001" x="353" y="0" width="349" height="585"/>
+	<SubTexture name="down0002" x="706" y="0" width="349" height="585"/>
+	<SubTexture name="down0003" x="1059" y="0" width="349" height="585"/>
+	<SubTexture name="left0000" x="1412" y="0" width="402" height="586"/>
+	<SubTexture name="left0001" x="1818" y="0" width="402" height="586"/>
+	<SubTexture name="left0002" x="2224" y="0" width="402" height="586"/>
+	<SubTexture name="left0003" x="2630" y="0" width="402" height="586"/>
+	<SubTexture name="right0000" x="3036" y="0" width="341" height="581"/>
+	<SubTexture name="right0001" x="3381" y="0" width="341" height="581"/>
+	<SubTexture name="right0002" x="3726" y="0" width="341" height="581"/>
+	<SubTexture name="right0003" x="0" y="590" width="341" height="581"/>
+	<SubTexture name="up0000" x="345" y="590" width="431" height="597"/>
+	<SubTexture name="up0001" x="780" y="590" width="431" height="597"/>
+	<SubTexture name="up0002" x="1215" y="590" width="431" height="597"/>
+	<SubTexture name="up0003" x="1650" y="590" width="431" height="597"/>
+	<SubTexture name="idle0000" x="2085" y="590" width="351" height="582"/>
+	<SubTexture name="idle0001" x="2440" y="590" width="351" height="582"/>
+	<SubTexture name="idle0002" x="2795" y="590" width="351" height="582"/>
+	<SubTexture name="idle0003" x="3150" y="590" width="351" height="582"/>
+	<SubTexture name="idle0004" x="3150" y="590" width="351" height="582"/>
+	<SubTexture name="idle0005" x="3505" y="590" width="351" height="582"/>
+	<SubTexture name="idle0006" x="3505" y="590" width="351" height="582"/>
+</TextureAtlas>

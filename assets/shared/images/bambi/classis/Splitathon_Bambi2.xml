@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Splitathon_Bambi.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="splitathon down0000" x="0" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon down0001" x="0" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon down0002" x="249" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon down0003" x="249" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon down0004" x="498" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon down0005" x="498" y="0" width="245" height="263"/>
+	<SubTexture name="splitathon idle0000" x="747" y="0" width="239" height="285"/>
+	<SubTexture name="splitathon idle0001" x="747" y="0" width="239" height="285"/>
+	<SubTexture name="splitathon idle0002" x="990" y="0" width="239" height="285"/>
+	<SubTexture name="splitathon idle0003" x="1233" y="0" width="239" height="285"/>
+	<SubTexture name="splitathon idle0004" x="1476" y="0" width="239" height="285"/>
+	<SubTexture name="splitathon left0000" x="1719" y="0" width="240" height="284"/>
+	<SubTexture name="splitathon left0001" x="1719" y="0" width="240" height="284"/>
+	<SubTexture name="splitathon left0002" x="0" y="289" width="240" height="284"/>
+	<SubTexture name="splitathon left0003" x="0" y="289" width="240" height="284"/>
+	<SubTexture name="splitathon left0004" x="244" y="289" width="240" height="284"/>
+	<SubTexture name="splitathon left0005" x="244" y="289" width="240" height="284"/>
+	<SubTexture name="splitathon right0000" x="488" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon right0001" x="488" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon right0002" x="730" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon right0003" x="730" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon right0004" x="972" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon right0005" x="972" y="289" width="238" height="274"/>
+	<SubTexture name="splitathon up0000" x="1214" y="289" width="228" height="295"/>
+	<SubTexture name="splitathon up0001" x="1214" y="289" width="228" height="295"/>
+	<SubTexture name="splitathon up0002" x="1446" y="289" width="228" height="295"/>
+	<SubTexture name="splitathon up0003" x="1446" y="289" width="228" height="295"/>
+	<SubTexture name="splitathon up0004" x="1678" y="289" width="228" height="295"/>
+	<SubTexture name="splitathon up0005" x="1678" y="289" width="228" height="295"/>
+</TextureAtlas>

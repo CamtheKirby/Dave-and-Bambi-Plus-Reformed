@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="longnosejohn.png"><SubTexture name="longnosejohn idle0000" x="0" y="0" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0001" x="834" y="0" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0002" x="1668" y="0" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0003" x="2502" y="0" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0004" x="3336" y="0" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0005" x="0" y="844" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn idle0006" x="834" y="844" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn left0000" x="1668" y="844" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn left0001" x="2502" y="844" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn left0002" x="3336" y="844" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn left0003" x="0" y="1688" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn up0000" x="834" y="1688" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn up0001" x="1668" y="1688" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn up0002" x="2502" y="1688" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn up0003" x="3336" y="1688" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn up0004" x="0" y="2532" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn down0000" x="834" y="2532" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn down0001" x="1668" y="2532" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn down0002" x="2502" y="2532" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn down0003" x="3336" y="2532" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn right0000" x="0" y="3376" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn right0001" x="834" y="3376" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn right0002" x="1668" y="3376" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn right0003" x="2502" y="3376" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+<SubTexture name="longnosejohn right0004" x="3336" y="3376" width="834" height="844" frameX="0" frameY="0" frameWidth="834" frameHeight="844" />
+</TextureAtlas>
+<!-- longnosejohn -->

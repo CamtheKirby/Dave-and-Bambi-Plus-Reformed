@@ -1,0 +1,8 @@
+happy -3, 1
+what -3, 1
+scared -15, 11
+idle 0 0
+singDOWN 3, -21
+singRIGHT -40, -13
+singUP -12, 20
+singLEFT 32, 8
