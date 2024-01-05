@@ -12,7 +12,9 @@ And others! (Prob in the credits menu)
 # VS DAVE AND BAMBI PLUS REFORMED
 this is dan
 
-![image](https://github.com/CamtheKirby/Dave-and-Bambi-Plus-Reformed/assets/92703353/0a2aa507-4bcf-4ce6-b0d7-133ebefcbd1d)
+![image](https://github.com/CamtheKirby/Dave-and-Bambi-Plus-Reformed/assets/92703353/8e225e1c-0cbb-4de7-9e2f-4a4ac34f56cc)
+
+
 
 
 say hi to dan
