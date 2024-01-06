@@ -40,6 +40,8 @@ class PlaySelectionState extends MusicBeatState
 
 	override function create()
 	{
+		//Paths.clearStoredMemory();
+
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -150,6 +152,7 @@ class PlaySelectionState extends MusicBeatState
 			{
 				selectable = true;
 			});
+		//	Paths.clearUnusedMemory();
 	}
 
 	var selectedSomethin:Bool = false;

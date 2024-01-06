@@ -55,6 +55,8 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{		
+		Paths.clearStoredMemory();
+
 		fun = FlxG.random.int(0, 999);
 		if(fun == 1)
 		{
@@ -124,6 +126,7 @@ class TitleState extends MusicBeatState
 			startIntro();
 		});		
 		#end
+		Paths.clearUnusedMemory();
 	}
 
 	var logoBl:FlxSprite;

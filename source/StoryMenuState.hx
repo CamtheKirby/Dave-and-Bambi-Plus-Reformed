@@ -28,6 +28,7 @@ using StringTools;
 
 class StoryMenuState extends MusicBeatState
 {
+
 	var scoreText:FlxText;
 	
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true];
@@ -61,6 +62,9 @@ class StoryMenuState extends MusicBeatState
 
 	override function create()
 	{
+		Paths.clearStoredMemory();
+	    Paths.clearUnusedMemory();
+		
 		awaitingExploitation = (FlxG.save.data.exploitationState == 'awaiting');
 
 		if (FlxG.save.data.masterWeekUnlocked)
