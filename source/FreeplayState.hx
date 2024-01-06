@@ -184,9 +184,9 @@ class FreeplayState extends MusicBeatState
 	override function create()
 	{
 		#if not web
-		Paths.clearUnusedMemory();
-        Paths.clearStoredMemory();
 		#end
+	//	Paths.clearStoredMemory();
+	//	Paths.clearUnusedMemory();
 
 		#if desktop DiscordClient.changePresence("In the Freeplay Menu", null); #end
 		

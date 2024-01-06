@@ -526,6 +526,8 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		Paths.clearStoredMemory();
+
 		var compactCombo:String = formatCompactNumber(combo);
         var compactMaxCombo:String = formatCompactNumber(maxCombo);
 		var compactScore:String = formatCompactNumber(songScore);
@@ -1961,6 +1963,7 @@ class PlayState extends MusicBeatState
 		hidehphud();
 
 		super.create();
+		Paths.clearUnusedMemory();
 
 		perlinCamera = new Perlin(Math.floor(Math.random() * 65535));
 
