@@ -1,3 +1,7 @@
+I'm not working on this anymore
+help me with polymod in my new dave and bambi project here https://github.com/CamtheKirby/VsDave-Modable
+
+
 OG Plus by DrZomboss64 or Timmie 64 or [Expunged DX](https://www.youtube.com/@expungedDX64)
 OFFICIAL Plus Revied Team (Currently making an OFFICIAL revive of DABP) [The leaks are only on the discord server btw](https://discord.gg/mgSsAmZqwv)
 Forked build by [matthewfro](https://github.com/matthewfro17) (Charted importumania and Doge vs Bambi I think)
