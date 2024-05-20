@@ -1,5 +1,5 @@
 I'm not working on this anymore
-help me with polymod in my new dave and bambi project here https://github.com/CamtheKirby/VsDave-Modable
+ look my new dave and bambi project here https://github.com/CamtheKirby/VsDave-Modable
 
 
 OG Plus by DrZomboss64 or Timmie 64 or [Expunged DX](https://www.youtube.com/@expungedDX64)
