@@ -338,6 +338,11 @@ class TitleState extends MusicBeatState
 		{
 			FlxG.switchState(new CompatWarningState());
 		}
+
+		if (FlxG.keys.justPressed.R)
+			{
+				FlxG.switchState(new FreeplayState());
+			}
 		
 		if (pressedEnter && !transitioning && skippedIntro)
 		{

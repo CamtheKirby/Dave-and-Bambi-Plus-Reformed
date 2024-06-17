@@ -37,6 +37,7 @@ class FreeplayState extends MusicBeatState
 
 	var scoreText:FlxText;
 	var diffText:FlxText;
+	var inftext:FlxText;
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
 
@@ -49,9 +50,11 @@ class FreeplayState extends MusicBeatState
 	private var CurrentSongIcon:FlxSprite;
 
 	private var Catagories:Array<String> = ['dave', 'joke', 'extras', 'cover', 'fanmade', 'mods'];
+	private var cTexts:String = "";
 	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_dave'), LanguageManager.getTextString('freeplay_joke'), LanguageManager.getTextString('freeplay_extra')];
 
 	private var CurrentPack:Int = 0;
+	private var cTextsint:Int = 0;
 	private var NameAlpha:Alphabet;
 
 	var loadingPack:Bool = false;
@@ -179,7 +182,10 @@ class FreeplayState extends MusicBeatState
 	var awaitingExploitation:Bool;
 	public static var packTransitionDone:Bool = false;
 	var characterSelectText:FlxText;
+	var reloadText:FlxText;
 	var showCharText:Bool = true;
+	public var blackbar:FlxSprite;
+	public var blackbar2:FlxSprite;
 
 	override function create()
 	{
@@ -225,6 +231,7 @@ class FreeplayState extends MusicBeatState
 		if (FlxG.save.data.terminalFound && !awaitingExploitation)
 		{
 			Catagories = ['dave', 'joke', 'extras', 'dave2.5', 'classic', 'cover', 'fanmade', 'mods', 'terminal'];
+			//cTexts = ['Play the OG Story!', 'Play the Funnis', 'Play Some Extras', 'Play D&B Covers', 'Play Songs By The Community', 'Play Custom Songs', 'Get Accces to the Terminal'];
 			translatedCatagory = [
 				LanguageManager.getTextString('freeplay_dave'),
 				LanguageManager.getTextString('freeplay_joke'),
@@ -255,6 +262,29 @@ class FreeplayState extends MusicBeatState
 			add(NameAlpha);
 			titles.push(NameAlpha);
 		}
+
+		    blackbar = new FlxSprite(0, 550).makeGraphic(FlxG.width * 2, 300, FlxColor.BLACK);
+			blackbar.alpha = 0.5;
+			blackbar.scrollFactor.set();
+			add(blackbar);
+
+			reloadText = new FlxText(FlxG.width - 1125, FlxG.height, 0, 'Press R to reload', 18);
+			reloadText.setFormat("Comic Sans MS Bold", 18, FlxColor.WHITE, FlxTextAlign.RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			reloadText.borderSize = 1.5;
+			reloadText.antialiasing = FlxG.save.data.globalAntialiasing;
+			reloadText.scrollFactor.set();
+			reloadText.x -= reloadText.textField.textWidth;
+			reloadText.y -= reloadText.textField.textHeight;
+			add(reloadText);
+			
+			inftext = new FlxText(FlxG.width - 500, FlxG.height - 110, 0, cTexts /*'thus have le songs abcdefg'*/,  18);
+			inftext.setFormat("Comic Sans MS Bold", 28, FlxColor.WHITE, FlxTextAlign.RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			inftext.borderSize = 3.5;
+			inftext.antialiasing = FlxG.save.data.globalAntialiasing;
+			inftext.scrollFactor.set();
+			inftext.x -= inftext.textField.textWidth;
+			inftext.y -= inftext.textField.textHeight;
+			add(inftext);
 
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -305,6 +335,7 @@ class FreeplayState extends MusicBeatState
 
 					Catagories = ['uhoh'];
 					translatedCatagory = ['uh oh'];
+				//    cTexts = ['PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT'];
 					packTransitionDone = true;
 					canInteract = true;
 				}});
@@ -326,6 +357,7 @@ class FreeplayState extends MusicBeatState
 				titles[CurrentPack].setPosition(originalTitlePos.x, originalTitlePos.y);
 				
 				Catagories = ['uhoh'];
+				//cTexts = ['PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT PLAY IT'];
 				translatedCatagory = ['uh oh'];
 			}
 		}
@@ -436,13 +468,17 @@ class FreeplayState extends MusicBeatState
 
 				addWeek(['Enter Terminal'], 17, ['terminal']);
 				case 'mods':
-				isaCustomSong = true;
-			//	addWeek(['Warmup'], 0, ['dave']);
+			#if sys
+			    isaCustomSong = true;
 				for (i in 0...customSongs.length)
 					{
 						var data:Array<String> = customSongs[i].split(':');
 						addCustomWeek([data[0]], Std.parseInt(data[1]), [data[2]]);
 					}
+					#else
+					addWeek(['YOU DONT HAVE SYS'], 0, ['dave']);
+                    addWeek(['Warmup'], 0, ['dave']);
+					#end
 		}
 	}
 
@@ -534,13 +570,29 @@ class FreeplayState extends MusicBeatState
 	public function UpdatePackSelection(change:Int)
 	{
 		CurrentPack += change;
-		if (CurrentPack == -1)
-			CurrentPack = Catagories.length - 1;
+
+		if (CurrentPack == -1) 
+		CurrentPack = Catagories.length - 1;
 		
-		if (CurrentPack == Catagories.length)
+		
+		if (CurrentPack == Catagories.length) 
 			CurrentPack = 0;
+		
+
 
 		camFollow.x = icons[CurrentPack].x + 256;
+		
+	}
+
+	public function cTextsChange(change:Int)
+	{
+		cTextsint += change;
+
+		if (cTextsint < -1)
+			cTextsint = 0;
+
+		if (cTextsint == Catagories.length)
+			cTextsint = Catagories.length - 1;
 	}
 
 	override function beatHit()
@@ -594,6 +646,35 @@ class FreeplayState extends MusicBeatState
 			#end
 		}
 
+		if (cTextsint == 0) {
+			cTexts = 'Play the OG Story!';
+		} else if (cTextsint == 1) {
+			cTexts = 'Play the Funnis!';
+		} else if (cTextsint == 2) {
+			cTexts = 'Play Some Extras!';
+		} else if (cTextsint == 3) {
+			cTexts = 'Play D&B Covers!';
+		} else if (cTextsint == 4) {
+			cTexts = 'Play Songs By The Community!';
+		} else if (cTextsint == 5) {
+			cTexts = 'Play Custom Songs!';
+		} else if (cTextsint == 6) {
+			cTexts = 'Get Accces to the Terminal!';
+		} else {
+			cTexts = 'Erm what the filp';
+		}
+		
+
+		if (FlxG.keys.justPressed.R) // Reload for Custom Songs
+			{
+				FlxG.switchState(new FreeplayState());
+			}
+
+			/*if (FlxG.keys.justPressed.M) // Reload for Custom Songs
+				{
+					FlxG.switchState(new DownloadMods());
+				} */
+
 		if (InMainFreeplayState)
 		{
 			timeSincePress += elapsed;
@@ -639,10 +720,14 @@ class FreeplayState extends MusicBeatState
 			if (controls.LEFT_P && canInteract)
 			{
 				UpdatePackSelection(-1);
+				cTextsChange(-1);
+				trace(cTextsint);
 			}
 			if (controls.RIGHT_P && canInteract)
 			{
 				UpdatePackSelection(1);
+				cTextsChange(1);
+				trace(cTextsint);
 			}
 			if (controls.ACCEPT && !loadingPack && canInteract)
 			{
@@ -669,6 +754,8 @@ class FreeplayState extends MusicBeatState
 						loadingPack = false;
 					});
 				});
+				blackbar.visible = false;
+				inftext.visible = false;
 			}
 			if (controls.BACK && canInteract && !awaitingExploitation)
 			{
@@ -775,6 +862,8 @@ class FreeplayState extends MusicBeatState
 						iconArray = [];
 						curSelected = 0;
 						canInteract = true;
+					    blackbar.visible = true;
+						inftext.visible = true;
 					}});
 				}
 			}

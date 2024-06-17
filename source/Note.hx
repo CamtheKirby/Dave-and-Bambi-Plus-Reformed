@@ -132,6 +132,8 @@ class Note extends FlxSprite
 				notePathLol = 'notes/NOTE_phone';
 			case 'shape':
 				notePathLol = 'notes/NOTE_assets_Shape';
+			case 'Death Note':
+				notePathLol = 'notes/NOTE_phoneDeath';
 		}
 		switch (PlayState.SONG.song.toLowerCase())
 		{
@@ -289,14 +291,14 @@ class Note extends FlxSprite
 					{
 						antialiasing = true;
 					}
-			case 'phone' | 'phone-zardy' | 'phone-alt':
+			case 'phone' | 'phone-zardy' | 'phone-alt' | 'Death Note':
 				if (!isSustainNote)
 				{
-					frames = Paths.getSparrowAtlas('notes/NOTE_phone', 'shared');
+					frames = Paths.getSparrowAtlas('notes/NOTE_phoneDeath', 'shared');
 				}
 				else
 				{
-					frames = Paths.getSparrowAtlas('notes/NOTE_assets', 'shared');
+					frames = Paths.getSparrowAtlas('notes/NOTE_phoneDeath', 'shared');
 				}
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');

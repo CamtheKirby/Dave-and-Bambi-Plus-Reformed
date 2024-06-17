@@ -3,7 +3,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin' | VS. Dave and Bambi 3.0b | Extra Keys Addon 2.0.2 | Plus Beta 1.0 | Plus Reformed Alpha 0.1.0" file="VsDavePlusReformed" packageName="dnbplus.daveandbambiplus" package="dnbplus.daveandbambiplus" main="Main" version="3.0.0" company="dnbplus"/>
+	<app title="Friday Night Funkin' | VS. Dave and Bambi 3.0b | Extra Keys Addon 2.0.2 | Plus Beta 1.0 | Plus Reformed 1.0.0 FINAL?" file="VsDavePlusReformed" packageName="dnbplus.daveandbambiplus" package="dnbplus.daveandbambiplus" main="Main" version="3.0.0" company="dnbplus"/>
 	<app preloader="flixel.system.FlxPreloader"/>
 
 	<set name="APP_ID" value="0x0100f6c013bbc000"/>

@@ -4,7 +4,12 @@ import flixel.FlxG;
 import flixel.graphics.frames.FlxAtlasFrames;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
-#if sys import sys.FileSystem; #end
+#if sys 
+import sys.FileSystem; 
+import sys.io.File;
+import flixel.graphics.FlxGraphic;
+import openfl.display.BitmapData;
+#end
 import flash.media.Sound;
 import flixel.graphics.FlxGraphic;
 import openfl.system.System;
@@ -21,6 +26,8 @@ class Paths
 	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
 
 	static var currentLevel:String;
+	public static var loadedImages:Array<FlxGraphic> = [];
+	public static var loadedImagePath:Array<String> = [];
 
 	static public function isLocale():Bool
 	{
@@ -206,6 +213,17 @@ class Paths
 		return getPath('data/$key.json', TEXT, library);
 	}
 
+	inline static public function haxeScript(key:String, ?library:String)
+	{
+		return getPath('data/charts/$key.txt', TEXT, library);
+	}
+
+	inline static public function haxeCustomScript(key:String, ?library:String)
+		{
+			return getPath('data/customCharts/$key.txt', TEXT, library);
+		} 
+	
+
 	inline static public function data(key:String, ?library:String)
 	{
 		return getPath('data/$key', TEXT, library);
@@ -225,6 +243,11 @@ class Paths
 		{
 			return getPath('data/customCharts/$key.json', TEXT, library); 
 		}
+
+		inline static public function dumb(?library:String)
+			{
+				return getPath('data/customCharts', TEXT, library); 
+			}
 
 	static public function sound(key:String, ?library:String)
 	{
@@ -375,6 +398,13 @@ class Paths
 		return FlxAtlasFrames.fromSparrow(image(key, library), file('images/$key.xml', library));
 	}
 
+	inline static public function getCustomSparrowAtlas(key:String, ?library:String)
+		{
+		var daImage = checkForImage(key);
+			//trace("loaded custom image pog");
+			return FlxAtlasFrames.fromSparrow(daImage, File.getContent('assets/shared/images/$key.xml'));
+		}
+
 	inline static public function getPackerAtlas(key:String, ?library:String)
 	{
 		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('images/$key.txt', library));
@@ -388,5 +418,26 @@ class Paths
 	static public function modFolders(key:String) {
 		return 'songs/' + key;
 	}
+
+	static private function checkForImage(path:String)
+		{
+			if(FileSystem.exists(image(path)))
+			{
+				if (!loadedImagePath.contains(path))
+				{
+					var imageGraphic:FlxGraphic = FlxGraphic.fromBitmapData(BitmapData.fromFile(image(path)));
+					imageGraphic.persist = true;
+					loadedImagePath.push(path);
+					loadedImages.push(imageGraphic);
+					trace("added custom image");
+				}
+				var i = loadedImagePath.indexOf(path);
+				trace("got dat image");
+				return loadedImages[i];
+				
+	
+			}
+			return null;
+		}
 
 }

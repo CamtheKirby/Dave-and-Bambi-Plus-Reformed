@@ -1,0 +1,1 @@
+IneedMilkHkindahaxeScriptithinkHswitch (curStep){case 10:FlxG.camera.flash(FlxColor.RED, 4);}

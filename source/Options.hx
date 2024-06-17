@@ -82,16 +82,13 @@ class LanguageOption extends Option
 	public function new()
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 		description = "Change your Language";
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		FlxG.switchState(new ChangeLanguageState());
              		return true;
 	}
@@ -107,18 +104,13 @@ class DFJKOption extends Option
 	public function new()
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
 		description = "Edit your keybindings";
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
 		FlxG.switchState(new ChangeKeybinds());
-             		return true;
+        return true;
 	}
 
 	private override function updateDisplay():String
@@ -612,16 +604,13 @@ class ShitMsOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		FlxG.save.data.shaders = !FlxG.save.data.shaders;
 		display = updateDisplay();
 		return true;
@@ -629,8 +618,7 @@ class ShitMsOption extends Option
 
 	public override function right():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		left();
 		return true;
 	}
@@ -646,16 +634,11 @@ class WavingBackgrounds extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
 		FlxG.save.data.waving = !FlxG.save.data.waving;
 		display = updateDisplay();
 		return true;
@@ -663,8 +646,7 @@ class WavingBackgrounds extends Option
 
 	public override function right():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+
 		left();
 		return true;
 	}
@@ -680,9 +662,6 @@ class GPURendering extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
 			description = desc;
 
 		#if html5
@@ -693,8 +672,6 @@ class GPURendering extends Option
 	public override function left():Bool
 	{
 		#if !html5
-		if (OptionsMenu.isInPause)
-			return false;
 
 		FlxG.save.data.gpuRender = !FlxG.save.data.gpuRender;
 		display = updateDisplay();
@@ -707,8 +684,6 @@ class GPURendering extends Option
 	public override function right():Bool
 	{
 		#if !html5
-		if (OptionsMenu.isInPause)
-			return false;
 		left();
 		return true;
 		#else
@@ -837,9 +812,6 @@ class DownscrollOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
 			description = desc;
 	}
 
@@ -948,16 +920,11 @@ class DistractionsAndEffectsOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause || FlxG.save.data.optimize || !FlxG.save.data.background)
-			return false;
 		FlxG.save.data.distractions = !FlxG.save.data.distractions;
 		display = updateDisplay();
 		return true;
@@ -1007,9 +974,6 @@ class StepManiaOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
 			description = desc;
 	}
 
@@ -1085,9 +1049,6 @@ class FlashingLightsOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
 			description = desc;
 	}
 
@@ -1115,9 +1076,7 @@ class AntialiasingOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -1145,9 +1104,7 @@ class MissSoundsOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -1217,9 +1174,7 @@ class SelfAwarenessOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -1274,9 +1229,7 @@ class Judgement extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 		acceptValues = true;
 	}
@@ -1381,16 +1334,13 @@ class BlurNotes extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-           	if (OptionsMenu.isInPause)
-			return false;
+           	 
 		FlxG.save.data.blurNotes = !FlxG.save.data.blurNotes;
 		display = updateDisplay();
 		return true;
@@ -1413,16 +1363,13 @@ class SmoothHealth extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-           	if (OptionsMenu.isInPause)
-			return false;
+           	 
 		FlxG.save.data.smoothHealth = !FlxG.save.data.smoothHealth;
 		display = updateDisplay();
 		return true;
@@ -1557,9 +1504,7 @@ class AccTypeOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
@@ -1594,16 +1539,13 @@ class TimeBarType extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-if (OptionsMenu.isInPause)
-			return false;
+ 
 		FlxG.save.data.timeBarTypeNum--;
 		if (FlxG.save.data.timeBarTypeNum < 0)
 		FlxG.save.data.timeBarTypeNum = OptionsHelpers.TimeBarArray.length - 3;
@@ -1614,8 +1556,7 @@ if (OptionsMenu.isInPause)
 
 	public override function right():Bool
 	{
-if (OptionsMenu.isInPause)
-			return false;
+ 
 		FlxG.save.data.timeBarTypeNum++;
 		if (FlxG.save.data.timeBarTypeNum > OptionsHelpers.TimeBarArray.length - 1)
 			FlxG.save.data.timeBarTypeNum = OptionsHelpers.TimeBarArray.length - 1;
@@ -1952,9 +1893,7 @@ class CamZoomOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -1982,16 +1921,13 @@ class GreenScreenMode extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		FlxG.save.data.greenscreenmode = !FlxG.save.data.greenscreenmode;
 		display = updateDisplay();
 		return true;
@@ -2041,17 +1977,14 @@ class HideHud extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 
 	}
 
 	public override function left():Bool
 	{
-              	if (OptionsMenu.isInPause)
-			return false;
+              	 
 		FlxG.save.data.hideHud = !FlxG.save.data.hideHud;
 		display = updateDisplay();
 		return true;
@@ -2074,9 +2007,7 @@ class SSmoothHealthArray extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 	}
 
@@ -2145,9 +2076,7 @@ class InstaRestart extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
@@ -2175,9 +2104,7 @@ class GhostDouble extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
@@ -2232,9 +2159,7 @@ class JudgementCounter extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
@@ -2262,9 +2187,7 @@ class MoreMaxHP extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
@@ -2292,9 +2215,7 @@ class MiddleScrollOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -2477,16 +2398,12 @@ class Background extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu."
-		else
+	 
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause || FlxG.save.data.optimize)
-			return false;
 		FlxG.save.data.background = !FlxG.save.data.background;
 		display = updateDisplay();
 		return true;
@@ -2509,16 +2426,13 @@ class OptimizeOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu."
-		else
+	 
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		FlxG.save.data.optimize = !FlxG.save.data.optimize;
 		display = updateDisplay();
 		return true;
@@ -2541,9 +2455,7 @@ class RotateSpritesOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = desc + " (RESTART REQUIRED)";
-		else
+		 
 			description = desc;
 	}
 
@@ -2605,17 +2517,14 @@ class MicedUpSusOption extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 
 	}
 
 	public override function left():Bool
 	{
-              	if (OptionsMenu.isInPause)
-			return false;
+              	 
 		FlxG.save.data.micedUpSus = !FlxG.save.data.micedUpSus;
 		display = updateDisplay();
 		return true;
@@ -2643,8 +2552,7 @@ class Shaders extends Option
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 
 		FlxG.save.data.shaders = !FlxG.save.data.shaders;
 
@@ -2674,8 +2582,7 @@ class CompatMode extends Option
 
 	public override function left():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 
 		FlxG.save.data.compatMode = !FlxG.save.data.compatMode;
 
@@ -2722,16 +2629,13 @@ class LockWeeksOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		if (!confirm)
 		{
 			confirm = true;
@@ -2759,16 +2663,13 @@ class LockWeeksOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		if (!confirm)
 		{
 			confirm = true;
@@ -2796,16 +2697,13 @@ class ResetScoreOption extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		if (!confirm)
 		{
 			confirm = true;
@@ -2844,16 +2742,13 @@ class QualityLow extends Option
 	public function new(desc:String)
 	{
 		super();
-              if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+             
 			description = desc;
 	}
 
 	public override function left():Bool
 	{
-             		if (OptionsMenu.isInPause)
-			return false;
+             		 
 		FlxG.save.data.lowQuality = !FlxG.save.data.lowQuality;
 		display = updateDisplay();
 		return true;
@@ -2914,16 +2809,13 @@ class ResetSettings extends Option
 	public function new(desc:String)
 	{
 		super();
-		if (OptionsMenu.isInPause)
-			description = "This option cannot be toggled in the pause menu.";
-		else
+	 
 			description = desc;
 	}
 
 	public override function press():Bool
 	{
-		if (OptionsMenu.isInPause)
-			return false;
+		 
 		if (!confirm)
 		{
 			confirm = true;

@@ -91,6 +91,7 @@ class ChartingState extends MusicBeatState
 	var vocals:FlxSound;
 
 	var player2:Character = new Character(0,0, "dad");
+	//var player2:/*Character*/Boyfriend = new Boyfriend(0,0, "bf");
 	var player1:Boyfriend = new Boyfriend(0,0, "bf");
 
 	var leftIcon:HealthIcon;
@@ -103,7 +104,7 @@ class ChartingState extends MusicBeatState
 	
 	var guitarPart:Bool = false;
 
-	var noteTypes = ['normal', 'phone', 'phone-alt', 'shape'];
+	var noteTypes = ['normal', 'phone', 'phone-alt', 'shape', 'Death Note'];
 	var curNoteType:Int;
 
 	var shagVoice:Bool;

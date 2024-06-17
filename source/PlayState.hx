@@ -1,5 +1,5 @@
 package; // "Most hard-coded FNF mod ever!!!!!!!!!!" - p0kk0 on GameBanana(https://gamebanana.com/mods/43201?post=10328553)
-
+//package2.0; // I SOFTCODED IT HAHAHHAHAAH
 import flixel.system.FlxAssets;
 import flixel.system.FlxAssets.FlxSoundAsset;
 import CreditsMenuState.CreditsText;
@@ -318,7 +318,6 @@ class PlayState extends MusicBeatState
 	public static var inDaPlay:Bool = false;
 
 	public static var campaignScore:Int = 0;
-
 	var defaultCamZoom:Float = 1.05;
 	var lockCam:Bool;
 	
@@ -5460,11 +5459,11 @@ class PlayState extends MusicBeatState
 		{
 			displayedHealth = health;
 		}
-		formattedSongScore = !FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(songScore, false) : compactScore;
-		formattedScore = (!FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(songScore, false) : compactScore) + formattedMaxScore;
-		formattedSongMisses = !FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(misses, false) : compactMisses;
-		formattedCombo = !FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(combo, false) : compactCombo;
-		formattedNPS = !FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(nps, false) : compactNPS;
+		formattedSongScore = FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(songScore, false) : compactScore;
+		formattedScore = (FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(songScore, false) : compactScore) + formattedMaxScore;
+		formattedSongMisses = FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(misses, false) : compactMisses;
+		formattedCombo = FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(combo, false) : compactCombo;
+		formattedNPS = FlxG.save.data.compactNumbers ? FlxStringUtil.formatMoney(nps, false) : compactNPS;
 		if (FlxG.save.data.accuracyDisplay)
 		{
 			switch (SONG.song.toLowerCase())
@@ -6197,6 +6196,12 @@ class PlayState extends MusicBeatState
 							dad.playAnim('singSmash', true);
 						case 'phone-zardy':
 							boyfriend.playAnim('singSmash', true);
+						case 'Hurt Note':
+						var hitAnimation:Bool = boyfriend.animation.getByName("hit") != null;
+						boyfriend.playAnim(hitAnimation ? 'hit' : (isShaggy ? 'singDOWNmiss' : 'singRIGHTmiss'), true);
+						if (isShaggy) boyfriend.color = 0xFF840000;
+						return;
+						
 						default:
 							if (daNote.noteStyle == 'phone-alt') { // I didn't notice bambi's alt animation has only left and right
 								if (noteToPlay == 'UP') noteToPlay = 'RIGHT';
@@ -6356,7 +6361,9 @@ class PlayState extends MusicBeatState
 						goodNoteHit(daNote);
 						boyfriend.holdTimer = 0;
 					}
+					//boyfriend.dance()
 				}
+				//boyfriend.dance()
 
 				var strumY:Float = 0;
 				if (!guitarSection) strumY = playerStrums.members[daNote.noteData].y;
@@ -7933,6 +7940,7 @@ class PlayState extends MusicBeatState
 	{
 		if (true)
 		{
+			if (note.noteStyle != 'Death Note') {
 			misses++;	
 			if (inFiveNights)
 			{
@@ -7954,7 +7962,7 @@ class PlayState extends MusicBeatState
 			totalPlayed++;
 			healthBarShake(0.85);
 			RecalculateRating();
-
+			}
 			if (note != null)
 			{
 				switch (note.noteStyle)
@@ -7975,6 +7983,13 @@ class PlayState extends MusicBeatState
 					case 'phone-zardy':
 						var Animation:Bool = boyfriend.animation.getByName("singSmash") != null;
 						boyfriend.playAnim(boyfriend.animation.getByName("singSmash") == null ? 'singSmash' : 'singSmash', true);
+						return;
+						case 'Hurt Note':
+						/*var hitAnimation:Bool = boyfriend.animation.getByName("hit") != null;
+						boyfriend.playAnim(hitAnimation ? 'hit' : (isShaggy ? 'singDOWNmiss' : 'singRIGHTmiss'), true);
+						if (isShaggy) boyfriend.color = 0xFF840000;
+						health -= note.isSustainNote ? 0.25 : 0.1;
+						updateAccuracy(); */
 						return;
 				}
 			}
@@ -8273,6 +8288,13 @@ class PlayState extends MusicBeatState
 					var Animation:Bool = boyfriend.animation.getByName("singSmash") != null;
 					var heyAnimation:Bool = boyfriend.animation.getByName("hey") != null;
 					boyfriend.playAnim(Animation ? 'singSmash' : (heyAnimation ? 'hey' : (isShaggy ? 'singRIGHT' : 'singUPmiss')), true);
+					case 'Death Note':
+						var hitAnimation:Bool = boyfriend.animation.getByName("hit") != null;
+						boyfriend.playAnim(hitAnimation ? 'hit' : (isShaggy ? 'singDOWNmiss' : 'singRIGHTmiss'), true);
+						if (isShaggy) boyfriend.color = 0xFF840000; 
+						health -= note.isSustainNote ? 0.25 : 0.1; 
+						updateAccuracy(); 
+						
 				case 'phone':
 					var hitAnimation:Bool = boyfriend.animation.getByName("dodge") != null;
 					var heyAnimation:Bool = boyfriend.animation.getByName("hey") != null;
@@ -8648,6 +8670,17 @@ class PlayState extends MusicBeatState
 			super.stepHit();
 			if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
 				resyncVocals();
+
+
+		/*	if (!FreeplayState.isaCustomSong) {
+				if (FileSystem.exists(Paths.haxeScript('${SONG.song.toLowerCase()}-HS'))) {
+				  '${CoolUtil.plainTextFile(Paths.haxeScript('${SONG.song.toLowerCase()}-HS'))}';
+				}
+			} else {
+				if (FileSystem.exists(Paths.haxeCustomScript('${SONG.song.toLowerCase()}-HS'))) {
+					'${CoolUtil.plainTextFile(Paths.haxeCustomScript('${SONG.song.toLowerCase()}-HS'))}';
+				}
+			} */
 	
 			switch (SONG.song.toLowerCase())
 			{
@@ -11050,6 +11083,14 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(boyfriend, {alpha: 1}, 0.2);
 					makeInvisibleNotes(false);
 					FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom - 0.3}, 0.05);
+					dadStrums.forEach(function(strum:StrumNote)
+						{
+							strum.resetX();
+						});
+						playerStrums.forEach(function(strum:StrumNote)
+						{
+							strum.resetX();
+						});
 					modchart = ExploitationModchartType.Cheating; //While we're here, lets bring back a familiar modchart
 				case 1504:
 					dadStrums.forEach(function(strum:StrumNote)
@@ -11124,6 +11165,7 @@ class PlayState extends MusicBeatState
 					switchDad('bambi-angey', dad.getPosition(), false);
 					switchBF('bambi-unfair', boyfriend.getPosition(), true);
 				}
+
 				case 'importumania':
 					switch (curStep)
 					{
@@ -11588,6 +11630,27 @@ class PlayState extends MusicBeatState
 							FlxTween.tween(camHUD, {alpha: 0}, 5);
 							makeInvisibleNotes(true);
 					}
+
+					default:
+					/*var kindaHaxeScript = CoolUtil.coolTextFile(Paths.haxeCustomScript('${SONG.song.toLowerCase()}-HS'));
+
+					if (!FreeplayState.isaCustomSong) {
+					kindaHaxeScript = CoolUtil.coolTextFile(Paths.haxeScript('${SONG.song.toLowerCase()}-HS'));
+					} else {
+				    kindaHaxeScript = CoolUtil.coolTextFile(Paths.haxeCustomScript('${SONG.song.toLowerCase()}-HS'));
+				}
+					for (i in 0...kindaHaxeScript.length) 
+						{
+						var data:Array<String> = kindaHaxeScript[i].split('HkindahaxeScriptithinkH');
+						if (FileSystem.exists(Paths.haxeScript('${SONG.song.toLowerCase()}-HS'))) {
+							trace('whar');
+							data[1];
+
+						} else if (FileSystem.exists(Paths.haxeCustomScript('${SONG.song.toLowerCase()}-HS'))) {
+							trace(data[0]);
+							data[1];
+						}
+				      } */
 			}
 			if (SONG.song.toLowerCase() == 'exploitation' && curStep % 8 == 0)
 			{
@@ -12372,7 +12435,9 @@ class PlayState extends MusicBeatState
 					case 592:
 						crazyZooming = false;
 				}
-		}
+
+					}
+
 		if (shakeCam)
 		{
 			gf.playAnim('scared', true);

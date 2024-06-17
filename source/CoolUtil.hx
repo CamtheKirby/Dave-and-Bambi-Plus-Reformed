@@ -49,7 +49,11 @@ class CoolUtil
 
 	public static function coolTextFile(path:String):Array<String>
 	{
+		#if sys
+		var daList:Array<String> = File.getContent(path).trim().split('\n');
+		#else
 		var daList:Array<String> = Assets.getText(path).trim().split('\n');
+		#end
 
 		for (i in 0...daList.length)
 		{
@@ -57,6 +61,18 @@ class CoolUtil
 		}
 		return daList;
 	}
+
+/*	public static function plainTextFile(path:String)
+		{
+			#if sys
+			var daText:String = File.getContent(path).trim();
+			#else
+			var daText:String = Assets.getText(path).trim();
+			#end
+
+			return daText;
+		} */
+
 
 	/*public static function getSongFromJsons(jsonInput:String, diff:Int)
 		{

@@ -38,6 +38,7 @@ class OptionCata extends FlxSprite
 	public var middle:Bool = false;
 
 	public var text:FlxText;
+	public static var onPlayState:Bool = false;
 
 	public function new(x:Float, y:Float, _title:String, _options:Array<Option>, middleType:Bool = false)
 	{
